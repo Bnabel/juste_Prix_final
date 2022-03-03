@@ -52,7 +52,7 @@ if choix_niveau == mode_normal:
             print(f"Félicitations :-) le juste prix était le ({juste_prix}), vous avez réussi avec {nombre_essai_min} essais")
         nombre_essai_min += 1
     if nombre_essai_min > nombre_essai_max and prix_propose != juste_prix:
-        print(f"La partie est terminée :-( le nombre à trouver était le ({juste_prix})")
+        print(f"La partie est terminée :-( le nombre à trouver était le {juste_prix}")
 
 # =========|
 # Niveau 3 |
@@ -92,4 +92,4 @@ if choix_niveau == mode_personnalise:
         if nombre_essai != 0:
             nombre_chance += 1
     if nombre_essai <= nombre_chance and prix_propose != juste_prix:
-        print(f"La partie est terminée :-( le nombre à trouver était le numéro ({juste_prix})")
+        print(f"La partie est terminée :-( le nombre à trouver était le numéro {juste_prix}")
