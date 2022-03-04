@@ -63,20 +63,20 @@ if choix_niveau == mode_personnalise:
     nombre_essai = 0
     nombre_chance = 1
     prix_propose = ''
-    juste_prix = random.randint(prix_min, prix_max)
+    
 
     print('Veuillez choisir un prix ?')
     prix_max = int(input())
     print("Veuillez choisir un nombre d'essais ?")
     nombre_essai = int(input())
-
+    
+    juste_prix = random.randint(prix_min, prix_max)
     if nombre_essai == 0:
         print(f"Le juste prix sera de 1 à {prix_max} votre nombre d'essais est illimité.")
 
         nombre_chance -= 1
     else:
-        print(
-            f"Le juste prix sera de 1 à {prix_max} et vous aurez {nombre_essai} essais ")
+        print(f"Le juste prix sera de 1 à {prix_max} et vous aurez {nombre_essai} essais ")
 
     while prix_propose != juste_prix and nombre_chance <= nombre_essai:
         if nombre_essai != 0:
@@ -93,3 +93,4 @@ if choix_niveau == mode_personnalise:
             nombre_chance += 1
     if nombre_essai <= nombre_chance and prix_propose != juste_prix:
         print(f"La partie est terminée :-( le nombre à trouver était le numéro {juste_prix}")
+
