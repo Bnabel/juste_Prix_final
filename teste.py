@@ -19,7 +19,6 @@ mode_personnalise = 3
 if choix_niveau == mode_facile:
     prix_propose = int(input("Entrez un prix entre 1 et 100: "))
     juste_prix = random.randint(1, 100)     #Nombre générer par la fonction randint entre 1 et 100
-    
 
     while prix_propose != juste_prix:
         if juste_prix < prix_propose:
@@ -101,6 +100,4 @@ if choix_niveau == mode_personnalise:
     
     if nombre_essai_max <= nombre_essai_min and prix_propose != juste_prix:
         print(f"La partie est terminée :-( le nombre à trouver était le numéro {juste_prix}")
-
-
 
