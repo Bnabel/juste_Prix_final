@@ -53,7 +53,7 @@ if choix_niveau == mode_normal:
             print("c'est moins")
         else:
             print(f"Félicitations :-) le juste prix est le ({juste_prix}), vous avez réussi avec {nombre_essai_min} essais")
-        nombre_essai_min += 1#Compteur
+        nombre_essai_min += 1   #Compteur
     
     if nombre_essai_min > nombre_essai_max and prix_propose != juste_prix:
         print(f"La partie est terminée :-( le nombre à trouver était le {juste_prix}")
@@ -80,7 +80,7 @@ if choix_niveau == mode_personnalise:
     if nombre_essai_max == 0:
         print(f"Le juste prix sera de 1 à {prix_max} votre nombre d'essais est illimité.")
 
-        nombre_essai_min -= 1#Compteur
+        nombre_essai_min -= 1  #Compteur
     else:
         print(f"Le juste prix sera de 1 à {prix_max} et vous aurez {nombre_essai_max} essais ")
 
