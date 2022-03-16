@@ -100,7 +100,7 @@ if choix_niveau == mode_personnalise:
             nombre_essai_min += 1 #Compteur
     
     if nombre_essai_max <= nombre_essai_min and prix_propose != juste_prix:
-        print(f"La partie est terminée :-( le nombre à trouver était le numéro {juste_prix}")
+        print(f"La partie est terminée, le nombre à trouver était le numéro {juste_prix}")
 
 
 
