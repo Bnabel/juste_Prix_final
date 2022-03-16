@@ -118,4 +118,4 @@ try:
             f"La partie est terminée :-( le nombre à trouver était le numéro {juste_prix}")
 
 except ValueError:
-    print('Les caractères sont interdits ! veuillez relancer la partie.')
+    print('Les caractères sont interdits ! veuillez relancer la partie svp.')
