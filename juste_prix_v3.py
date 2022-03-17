@@ -55,7 +55,7 @@ if choix_niveau == mode_normal:
             print(f"Félicitations :-) le juste prix est le ({juste_prix}), vous avez réussi avec {nombre_essai_min} essais")
         nombre_essai_min += 1   #Compteur
     
-    if nombre_essai_min > nombre_essai_max and prix_propose != juste_prix:
+if nombre_essai_min > nombre_essai_max and prix_propose != juste_prix:
         print(f"La partie est terminée :-( le nombre à trouver était le {juste_prix}")
 
 # =========|

@@ -58,10 +58,8 @@ try:
                 print("c'est plus")
             elif prix_propose > juste_prix:
                 print("c'est moins")
-        else:
-            print(
+            else:print(
                 f"Félicitations :-) le juste prix est le ({juste_prix}), vous avez réussi avec {nombre_essai_min} essais")
-
             nombre_essai_min += 1  # Compteur
 
         if nombre_essai_min > nombre_essai_max and prix_propose != juste_prix:
